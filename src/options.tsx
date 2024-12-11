@@ -26,6 +26,7 @@ const Option = () => {
     reSearchResults,
     changeDetectedUser,
     clearReSearchResults,
+    deleteUser,
   } = useBskyUserManager();
 
   const {
@@ -182,6 +183,7 @@ const Option = () => {
                 clickAction={handleClickAction}
                 actionMode={actionMode}
                 reSearch={handleReSearch}
+                deleteUser={deleteUser}
               />
             ))}
           </div>
